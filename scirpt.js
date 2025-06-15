@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const response = await fetch('http://localhost:3000/submit-feedback', {
+    const response = await fetch('https://student-feedback-8wgk.onrender.com/api/feedback', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
